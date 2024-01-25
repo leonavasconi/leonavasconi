@@ -610,7 +610,14 @@
                         <i class="uil uil-phone contact__icon"></i>
                         <div>
                             <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle" id="phone">(13) 98213-7122</span>
+                          <style>
+  .contact__subtitle {
+    color: inherit; /* Mantém a cor padrão do texto do elemento pai */
+    text-decoration: none; /* Remove qualquer sublinhado padrão */
+  }
+</style>
+
+<span class="contact__subtitle" id="phone">(13) 98213-7122</span>
 
 <script>
   // Desativa a detecção automática de número de telefone
@@ -619,6 +626,7 @@
     return false;
   });
 </script>
+
 
                         </div>
                     </div>
