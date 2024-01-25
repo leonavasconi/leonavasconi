@@ -610,7 +610,15 @@
                         <i class="uil uil-phone contact__icon"></i>
                         <div>
                             <h3 class="contact__title">Call Me</h3>
-                            <span class="contact__subtitle">(13) 98213-7122*;</span>
+                            <span class="contact__subtitle" id="phone">(13) 98213-7122</span>
+
+<script>
+  // Desativa a detecção automática de número de telefone
+  document.getElementById('phone').addEventListener('click', function(event) {
+    event.preventDefault();
+    return false;
+  });
+</script>
 
                         </div>
                     </div>
